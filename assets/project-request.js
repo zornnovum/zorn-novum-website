@@ -119,6 +119,9 @@
         signal: controller.signal
       });
       const result = await response.json();
+      if (!result || typeof result !== 'object' || Array.isArray(result)) {
+        throw new Error('Unexpected submission response');
+      }
       if (!response.ok || result.ok === false || result.errors) {
         const details = Array.isArray(result.errors)
           ? result.errors.map(error => error.message).filter(message => typeof message === 'string').join(' ')
@@ -126,6 +129,8 @@
         showStatus('Your request could not be submitted. ' + (details || 'Please try again, or email orders@zornnovum.com.') + ' Your entries are still here.', true);
         return;
       }
+      // Clear entries only after an explicit success acknowledgment.
+      if (result.ok !== true) throw new Error('Submission was not acknowledged');
       accepted = true;
       form.reset();
       button.textContent = 'Request sent';
