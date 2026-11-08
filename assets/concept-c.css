@@ -312,3 +312,12 @@
 #zn-site:not(.zn-home) main>section.zn-request-layout.zn-section:nth-of-type(even) .zn-request-panel :is(.zn-mini,.zn-field-help){color:#B8CAD6}
 #zn-site:not(.zn-home) main>section.zn-request-layout.zn-section:nth-of-type(even) .zn-request-panel .zn-check-grid label{color:#F0F5F8}
 #zn-site:not(.zn-home) main>section.zn-request-layout.zn-section:nth-of-type(even) .zn-request-panel .zn-check-grid input{accent-color:#75BFF2}
+
+/* Contrast repairs: retain the light sections and dark inset panels. */
+#zn-site:not(.zn-home) main>section.zn-section:nth-of-type(even) .zn-kicker{color:#077B94}
+#zn-site:not(.zn-home) main>section.zn-section:nth-of-type(even) .zn-service-bullets{color:#526577}
+#zn-site:not(.zn-home) main>section.zn-section:nth-of-type(even) .zn-service-note :is(h2,h3,h4,strong){color:var(--zn-text)}
+#zn-site:not(.zn-home) main>section.zn-section:nth-of-type(even) .zn-service-note :is(p,.zn-muted){color:var(--zn-muted)}
+#zn-site:not(.zn-home) main>section.zn-request-layout.zn-section:nth-of-type(even) .zn-request-panel a:not(.zn-button){color:#C5DDEB;text-decoration:underline}
+#zn-site:not(.zn-home) main>section.zn-request-layout.zn-section:nth-of-type(even) .zn-request-panel :is(.zn-field-error,.zn-validation-summary){color:#FFB4B4}
+#zn-site:not(.zn-home) main>section.zn-request-layout.zn-section:nth-of-type(even) .zn-request-panel .zn-form-notice{color:var(--zn-text)}
