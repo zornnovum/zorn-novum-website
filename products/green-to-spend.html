@@ -25,6 +25,27 @@
   <link rel="stylesheet" href="/styles.css?v=social-20261027">
   <link rel="stylesheet" href="/assets/concept-c.css?v=contrast-20261107">
   <script src="/assets/site.js" defer></script>
+  <style>
+    /* Keep third-party signup text readable on the site's dark theme. */
+    #zn-site #launch-updates { background: #142b3c; }
+    #zn-site #launch-updates .gts-emailoctopus-form label,
+    #zn-site #launch-updates .gts-emailoctopus-form .emailoctopus-success-message,
+    #zn-site #launch-updates .gts-emailoctopus-form .emailoctopus-error-message {
+      color: #f0f5f8 !important;
+      font-size: 1rem !important;
+      line-height: 1.6 !important;
+      opacity: 1 !important;
+    }
+    #zn-site #launch-updates .zn-muted { color: #d5e2eb; }
+    #zn-site #launch-updates a { color: #8ed1ff; text-decoration: underline; }
+    #zn-site #launch-updates input[type="checkbox"] {
+      width: 1.25rem; height: 1.25rem; accent-color: #75bff2;
+    }
+    #zn-site #launch-updates input:focus-visible,
+    #zn-site #launch-updates a:focus-visible {
+      outline: 3px solid #ffdd75; outline-offset: 3px;
+    }
+  </style>
 </head>
 <body id="zn-site">
   <a class="skip-link" href="#main">Skip to content</a>
